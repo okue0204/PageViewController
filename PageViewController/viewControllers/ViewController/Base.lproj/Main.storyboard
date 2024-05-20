@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PageViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMx-I7-fmA">
+                                <rect key="frame" x="0.0" y="159" width="393" height="693"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="jrd-Ls-XzW">
+                                <rect key="frame" x="138.66666666666666" y="732" width="115.66666666666666" height="26"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="4rh-Q2-5lw"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" systemColor="underPageBackgroundColor"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </pageControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttF-NT-H4a" customClass="HeaderView" customModule="PageViewController" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="reT-Oy-S7D"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AxQ-0m-Hq1">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDp-jD-wgf">
+                                <rect key="frame" x="0.0" y="109" width="393" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="0.0" placeholderIntrinsicHeight="50" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zSb-fK-eD7">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="50"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zSb-fK-eD7" firstAttribute="leading" secondItem="JDS-AP-Xhm" secondAttribute="leading" id="03h-Va-vAI"/>
+                                    <constraint firstItem="zSb-fK-eD7" firstAttribute="top" secondItem="JDS-AP-Xhm" secondAttribute="top" id="CyM-XF-F7K"/>
+                                    <constraint firstAttribute="height" constant="50" id="FfO-s0-40Z"/>
+                                    <constraint firstItem="zSb-fK-eD7" firstAttribute="trailing" secondItem="JDS-AP-Xhm" secondAttribute="trailing" id="Xkl-tq-CXT"/>
+                                    <constraint firstItem="zSb-fK-eD7" firstAttribute="bottom" secondItem="JDS-AP-Xhm" secondAttribute="bottom" id="bsn-Vv-YZe"/>
+                                    <constraint firstItem="zSb-fK-eD7" firstAttribute="height" secondItem="Uwz-HH-rD8" secondAttribute="height" id="mLy-9z-5PW"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="JDS-AP-Xhm"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Uwz-HH-rD8"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XMx-I7-fmA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2GJ-iN-X7a"/>
+                            <constraint firstItem="jrd-Ls-XzW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5vM-Mm-Tuj"/>
+                            <constraint firstAttribute="bottom" secondItem="XMx-I7-fmA" secondAttribute="bottom" id="66j-JY-tjm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ttF-NT-H4a" secondAttribute="trailing" id="7EF-UJ-sKe"/>
+                            <constraint firstItem="ttF-NT-H4a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7mC-CX-bCc"/>
+                            <constraint firstItem="ttF-NT-H4a" firstAttribute="top" secondItem="AxQ-0m-Hq1" secondAttribute="bottom" id="Jna-48-YVg"/>
+                            <constraint firstItem="JDp-jD-wgf" firstAttribute="top" secondItem="ttF-NT-H4a" secondAttribute="bottom" id="K2A-RI-ekU"/>
+                            <constraint firstItem="ttF-NT-H4a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LcJ-uS-aMK"/>
+                            <constraint firstItem="XMx-I7-fmA" firstAttribute="top" secondItem="JDp-jD-wgf" secondAttribute="bottom" id="Ovb-Gj-tqJ"/>
+                            <constraint firstItem="JDp-jD-wgf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VOc-k0-4r4"/>
+                            <constraint firstItem="AxQ-0m-Hq1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WVW-yP-JOe"/>
+                            <constraint firstAttribute="trailing" secondItem="AxQ-0m-Hq1" secondAttribute="trailing" id="ZJ0-XB-fFJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JDp-jD-wgf" secondAttribute="trailing" id="aqh-US-2kp"/>
+                            <constraint firstItem="AxQ-0m-Hq1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dyi-ka-hKQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jrd-Ls-XzW" secondAttribute="bottom" constant="60" id="gcU-XS-Y8I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XMx-I7-fmA" secondAttribute="trailing" id="oId-6Z-GrO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="XMx-I7-fmA" id="99n-Ph-3hy"/>
+                        <outlet property="headerView" destination="ttF-NT-H4a" id="4Hv-Zd-7sK"/>
+                        <outlet property="pageControl" destination="jrd-Ls-XzW" id="AIw-xz-spT"/>
+                        <outlet property="scrollView" destination="JDp-jD-wgf" id="v7E-en-kjD"/>
+                        <outlet property="tagContainerStackView" destination="zSb-fK-eD7" id="oKg-IR-0Z9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="underPageBackgroundColor">
+            <color red="0.70980392156862748" green="0.71764705882352942" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
